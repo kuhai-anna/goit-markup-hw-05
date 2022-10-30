@@ -17,6 +17,7 @@
 	--media-background-color: rgba(255, 255, 255, 0.1);
 
 	--modal-background-color: rgba(0, 0, 0, 0.2);
+	--modal-btn-border-color: rgba(0, 0, 0, 0.1);
 
 	--portfolio-border-color: #eeeeee;
 	--portfolio-overlay-color: rgba(33, 150, 243, 0.9);
@@ -557,6 +558,43 @@ header > .container {
 	height: 100%;
 
 	background-color: var(--modal-background-color);
+}
+
+.backdrop.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	top: 50%;
+	left: 50%;
+	padding: 8px;
+	transform: translate(-50%, -50%);
+
+	min-width: 528px;
+	min-height: 581px;
+
+	background-color: var(--primary-background-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.button-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30px;
+	height: 30px;
+
+	background-color: var(--primary-background-color);
+	border: 1px solid var(--modal-btn-border-color);
+	border-radius: 50%;
 }
 
 /* -----------------PORTFOLIO--------------- */
