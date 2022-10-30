@@ -15,6 +15,9 @@
 	--services-thumb-color: rgba(47, 48, 58, 0.8);
 	--clients-border-color: #afb1b8;
 	--media-background-color: rgba(255, 255, 255, 0.1);
+
+	--modal-background-color: rgba(0, 0, 0, 0.2);
+
 	--portfolio-border-color: #eeeeee;
 	--portfolio-overlay-color: rgba(33, 150, 243, 0.9);
 
@@ -542,6 +545,18 @@ header > .container {
 .footer-social-link:hover,
 .footer-social-link:focus {
 	background-color: var(--accent-color);
+}
+
+/* ---------------MODAL WINDOW------------- */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: var(--modal-background-color);
 }
 
 /* -----------------PORTFOLIO--------------- */
