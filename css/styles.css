@@ -724,7 +724,8 @@ header > .container {
 	color: var(--additional-text-color);
 }
 
-.project-link:hover .project-overlay {
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
 	transform: translateY(0);
 }
 
