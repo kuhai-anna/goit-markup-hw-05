@@ -162,7 +162,6 @@ header > .container {
 
 .current::after {
 	position: absolute;
-	left: 0;
 	bottom: 0;
 
 	display: inline-block;
