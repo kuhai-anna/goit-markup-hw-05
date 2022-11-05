@@ -618,8 +618,8 @@ header > .container {
 
 .button-close {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 8px;
+	right: 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
